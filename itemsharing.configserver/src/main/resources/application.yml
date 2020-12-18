@@ -1,0 +1,13 @@
+server:
+  port: 8888
+spring:
+  cloud:
+    config:
+      server:
+        git:
+          uri: https://github.com/fsouayah/itemsharing-config-repo
+          username: fsouayah
+          password: fs06418717Git
+          search-paths: userservice, itemservice
+        encrypt:
+          enabled: false
